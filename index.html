@@ -1,0 +1,71 @@
+<html>
+
+
+  <head><title>IBACO</title>
+
+<link rel="manifest" href="./manifest.json">
+
+<script>
+function validateForm() {
+    var x = document.forms["Student"]["name"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+}
+   }
+function validateForm() {
+var y = document.forms["Student"]["Rno"].value;
+    if (y == "") {
+        alert("Contact_No must be filled out");
+        return false;
+}
+}
+</script>
+
+</head>
+ <body style='background-image:url(a.jpg)'>
+  <form action="Thank.html" name="Student" onsubmit="return validateForm()" method="post">
+
+      <table cellpadding="2" width="100%" height="100%" align="center" cellspacing="2" >
+<tr>
+  <td colspan=2>
+<center><font size=10><b>ORDERING FORM</b></font></center>
+ </td>
+  </tr>
+    <tr>
+<td>  <center>NAME</center></td>
+  <td><input type = "text" name = "name"  size="30"/></td>
+    </tr>
+<tr>
+    <td>  <center>CONTACT NUMBER  </center></td>
+  <td><input type="text" name="Rno" id="Rno"
+  size="30" ></td>
+  </tr>
+  <td>  <center>MAIL ID </center></td>
+  <td><input type="text" name="email" id="email"
+  size="30" ></td>
+  <tr><td><center>ADDRESS:</td><td><textarea></textarea></td>
+  </tr>
+ <tr><td>ICE CREAM FLAVOURS:</td><td><select name="h"><option value="i">Butterscotch Almond Amore Ice cream Cake-Rs.150</option>
+                          <option value="d">Almond Crunch Ice cream (95 gms)-Rs.200</option>
+                          <option value="k">Fresco Vanilla Ice cream Pizza-Rs.350</option>
+                          <option value="l">Strawberry Cheese Cake (95 gms)-Rs.300</option></select> </td></tr>
+ <tr><td>TYPE OF PAYMENT:</td><td>    <h4 style="color:white">  
+             <input type="radio">Cash on delivery<br>
+                 <input type="radio">Net banking<br>
+                  <input type="radio">credit or Debit card<br>
+  <tr>
+
+  <td>  <center><input type = "submit" name = "submit" value = "Submit" />  </center></td>
+
+  <td colspan="2">
+         <input type = "reset" name = "reset"  value = "Reset" /></td>
+
+  </tr>
+  </table>
+  </form>
+<script src="ce.js"></script>
+  </body>
+  </html>
+
+
